@@ -22,7 +22,7 @@ button {
     padding: 5px;
     border: 1px solid var(--first-color);
     background-color: var(--second-color);
-    color var(--first-color);
+    color: var(--first-color);
 }
 
 button:hover {
