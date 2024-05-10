@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <title>Switch Mode</title>
+</head>
+<body data-mode="light">
+    <div class="container">
+        <button id="toggle-mode">Dark</button>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae quis fugit non totam porro assumenda expedita. Molestiae aliquam ipsam sequi, saepe dolorem architecto accusamus, nemo repudiandae placeat dolor facere quos.</p>
+    </div>
+<script>
+    const toggleButton = document.querySelector('#toggle-mode');
+
+    toggleButton.addEventListener('click', (e) => {
+
+        const currentMode = document.body.dataset.mode;
+        if (currentMode === 'light') {
+            document.documentElement.style.setProperty('--first-color', 'black');
+            document.documentElement.style.setProperty('--secpnd-color', 'white');
+            document.body.dataset.mode = 'dark';
+            e.target.innerHTML = 'light';
+        } else if (currentMode === 'dark') {
+            document.documentElement.style.setProperty('--first-color', 'white');
+            document.documentElement.style.setProperty('--secpnd-color', 'black');
+            document.body.dataset.mode = 'light';
+            e.target.innerHTML = 'dark';
+        }
+    })
+</script>   
+</body>
+</html>
