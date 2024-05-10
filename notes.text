@@ -1,0 +1,13 @@
+1. basic html 
+    -boiler plate
+    -navbar
+    -sections
+    -footer
+    -buttons for themes/ textect---CONTENT
+
+2. CSS
+     :root
+     set basic standards for items
+
+     set standards on buttons etc to first root standards
+       body,  .container   .buttons etc

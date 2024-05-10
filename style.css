@@ -1,0 +1,32 @@
+:root {
+    --first-color: #480000;
+    --second-color: #ce3333;
+}
+
+body {
+    background-color: var(--second-color);
+    color: var(--first-color);
+}
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons-container button {
+    margin: 10px;
+    height: 30px;
+}
+
+button {
+    padding: 5px;
+    border: 1px solid var(--first-color);
+    background-color: var(--second-color);
+    color var(--first-color);
+}
+
+button:hover {
+    border: 1px solid var(--first-color);
+    background-color: var(--first-color);
+    color: var(--second-color);
+}
